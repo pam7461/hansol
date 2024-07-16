@@ -35,16 +35,52 @@
         }
 
         /* HEADER STYLE */
+        .header{
+            border-bottom:1px solid var(--font-color03);
+            padding:23px 0 22px;
+        }
         .header .logo{
             float:left;
+        }
+        .header .logo a{
+            display:block;
+            width:115px;
+            height:45px;
+            background:url(./images/logo.jpg) no-repeat center;
+            background-size:contain;
+            text-indent:-99999px;
         }
         .header .nav{
             float:left;
         }
         .header .q-nav{
             float:right;
+            font-weight:700;
+            font-size:14px;
+            color:var(--font-color04);
         }
-
+        .header .q-nav a{
+            float:left;
+            height:35px;
+            margin-left:10px;
+            border-radius:17.5px;
+            text-align:center;
+            line-height:35px;
+        }
+        .header .q-nav a:nth-child(1){
+            width:90px;
+            color:var(--font-color01);
+        }
+        .header .q-nav a:nth-child(2){
+            width:116px;
+            padding-left:34px;
+            background:var(--main-color01) url(./images/ico-virtual.png) no-repeat 10px center;
+            background-size:27px;
+        }
+        .header .q-nav a:nth-child(3){
+            width:35px;
+            background:var(--font-color03);
+        }
         /* MAIN-STYLE */
         .main-slider .container{
             width:1660px;
@@ -128,7 +164,7 @@
                         </li>
                     </ul> -->
                 </nav>
-                <div class="q-nav">
+                <div class="q-nav clearfix">
                     <a href="#">고객문의</a>
                     <a href="#">가상전시관</a>
                     <a href="#">Eng</a>
