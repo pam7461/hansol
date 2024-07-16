@@ -131,7 +131,7 @@
 
 
         /* MAIN-STYLE */
-        .main-slider{padding-top:91px;}
+        .main-slider{padding-top:150px;}
         .main-slider .container{
             width:1660px;
         }
@@ -224,7 +224,10 @@
         </header>
         <section class="sec main-slider">
             <div class="container">
-                메인 슬라이더
+                <div class="slider">
+                    <div class="img-box"><a href="#"><img src="./images/main-banner01.jpg" alt="banner01"></a></div>
+                    <div class="img-box"><a href="#"><img src="./images/main-banner02.jpg" alt="banner02"></a></div>
+                </div>
             </div>
         </section>
         <section class="sec sub-slider">
@@ -247,5 +250,10 @@
     <!-- 스크립트 기본위치 body 끝 전-->
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".slider").bxSlider();
+        });
+    </script>
 </body>
 </html>
