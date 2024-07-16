@@ -61,16 +61,22 @@
             font-weight:500;
             position:relative;
         }
-        .header .sub-nav{            
+        .header .sub-nav{ 
+            display:none;           
             position:absolute;
             left:0;
-            top:100px;
+            top:96px;
+            width:1000px;
             font-weight:400;
             font-size:14px;
             color:var(--font-color02);
-        }
+        }        
         .header .sub-nav li{
             float:left;
+            margin-right:48px;
+        }
+        .header .main-nav>li:hover .sub-nav{
+            display:block;
         }
 
         .header .q-nav{
