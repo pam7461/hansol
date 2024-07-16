@@ -184,8 +184,58 @@
         .sub-slider .container{
             width:1900px;
         }
-
-
+        .sub-slider .clearfix{
+            width:1240px;
+            margin:0 auto 46px;
+        }
+        .sub-slider .f-left{
+            float:left;
+            font-weight:700;
+            font-size:46px;
+            line-height:60px;
+            position:relative;
+        }
+        .sub-slider .f-left::after{
+            content:'';
+            display:block;
+            width:180px;
+            height:2px;
+            background:#000;
+            position:absolute;
+            left:450px;
+            top:100px;
+        }
+        .sub-slider .f-right{
+            float:right;
+        }
+        .sub-slider .sm-txt{
+            padding:10px 0;
+            font-size:15px;
+            color:var(--font-color02);
+        }
+        .sub-slider button{
+            width:160px;
+            height:40px;
+            border:none;
+            padding-left:16px;
+            background:var(--font-color01);
+            color:var(--font-color04);
+            text-align:left;
+            position:relative;
+        }
+        .sub-slider button::after{
+            content:'';
+            display: block;
+            box-sizing:border-box;
+            width:10px;
+            height:10px;
+            border-top:1px solid #fff;
+            border-right:1px solid #fff;
+            transform:rotate(45deg);
+            position:absolute;
+            left: 130px;
+            top: 16px;
+        }
         /* TOGETHER-STYLE */
 
 
@@ -300,7 +350,47 @@
         </section>
         <section class="sec sub-slider">
             <div class="container">
-                서브 슬라이더
+                <div class="slider">
+                    <div class="slide slide01">
+                        <div class="clearfix">
+                            <div class="f-left">
+                                <h2>한솔제지는<br>국내 제지산업의<br>중심입니다.</h2>
+                            </div>
+                            <div class="f-right">
+                                <p>Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="sm-txt">초대 문화부 장관 이어령, 한솔 40년 사사 축사 중</p>
+                                <button>한솔제지 소개</button>
+                            </div>
+                        </div>
+                        <div class="img-box"><img src="./images/sub-banner01.jpg" alt="sub-banner01"></div>
+                    </div>
+                    <div class="slide slide02">
+                        <div class="clearfix">
+                            <div class="f-left">
+                                <h2>한솔제지는<br>국내 제지산업의<br>중심입니다.</h2>
+                            </div>
+                            <div class="f-right">
+                                <p>Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="sm-txt">초대 문화부 장관 이어령, 한솔 40년 사사 축사 중</p>
+                                <button>한솔제지 소개</button>
+                            </div>
+                        </div>
+                        <div class="img-box"><img src="./images/sub-banner02.jpg" alt="sub-banner02"></div>
+                    </div>
+                    <div class="slide slide03">
+                        <div class="clearfix">
+                            <div class="f-left">
+                                <h2>한솔제지는<br>국내 제지산업의<br>중심입니다.</h2>
+                            </div>
+                            <div class="f-right">
+                                <p>Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="sm-txt">초대 문화부 장관 이어령, 한솔 40년 사사 축사 중</p>
+                                <button>한솔제지 소개</button>
+                            </div>
+                        </div>
+                        <div class="img-box"><img src="./images/sub-banner03.jpg" alt="sub-banner03"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="sec together">
