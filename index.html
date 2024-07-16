@@ -41,6 +41,7 @@
         }
         .header .logo{
             float:left;
+            margin-right:118px;
         }
         .header .logo a{
             display:block;
@@ -53,8 +54,28 @@
         .header .nav{
             float:left;
         }
+        .header .main-nav>li{
+            float:left;
+            margin-right:48px;
+            padding-top:4px;
+            font-weight:500;
+            position:relative;
+        }
+        .header .sub-nav{            
+            position:absolute;
+            left:0;
+            top:100px;
+            font-weight:400;
+            font-size:14px;
+            color:var(--font-color02);
+        }
+        .header .sub-nav li{
+            float:left;
+        }
+
         .header .q-nav{
             float:right;
+            padding-top:4px;
             font-weight:700;
             font-size:14px;
             color:var(--font-color04);
@@ -107,7 +128,7 @@
             <div class="container clearfix">
                 <h1 class="logo"><a href="./index.html">한솔제지 hansolpapper</a></h1>
                 <nav class="nav">
-                    <!-- <ul class="main-nav clearfix">
+                    <ul class="main-nav clearfix">
                         <li>
                             <a href="#">제품소개</a>
                             <ul class="sub-nav clearfix">
@@ -162,7 +183,7 @@
                                 <li><a href="#">뉴스</a></li>
                             </ul>
                         </li>
-                    </ul> -->
+                    </ul> 
                 </nav>
                 <div class="q-nav clearfix">
                     <a href="#">고객문의</a>
