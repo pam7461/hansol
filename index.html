@@ -43,6 +43,7 @@
             left:0;
             right:0;
             top:0;
+            z-index:10000;
         }
         .header .logo{
             float:left;
@@ -131,11 +132,52 @@
 
 
         /* MAIN-STYLE */
-        .main-slider{padding-top:150px;}
+        .main-slider{
+            padding-top:150px;
+            position:relative;
+            z-index:1000;
+        }
         .main-slider .container{
             width:1660px;
         }
-
+        .bx-wrapper {
+            -moz-box-shadow:none;
+            -webkit-box-shadow:none;            
+            box-shadow:none;
+            border:none;
+            background:transparent;
+        }
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+            bottom:75px;        
+        }
+        .slide>a{
+            position:absolute;
+            left:270px;
+            top:456px;
+        }
+        .slide>a::before{
+            content:'';
+            display:block;
+            width:24px;
+            height:24px;
+            border-radius:12px;
+            background:#000;
+            position:absolute;
+            right:-32px;
+            top:5px;
+        }
+        .slide>a::after{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+            position: absolute;
+            right: -24px;
+            top: 11px;
+        }
 
         /* SUB-STYLE */
         
@@ -227,7 +269,7 @@
                 <div class="slider">
                     <div class="slide slide01">
                         <img src="./images/main-banner01.jpg" alt="banner01">
-                        <a href="#">문의하러 가기 <span>이동</span></a>
+                        <a href="#">문의하러 가기</a>
                     </div>
                     <div class="slide slide02">
                         <img src="./images/main-banner02.jpg" alt="banner02">
