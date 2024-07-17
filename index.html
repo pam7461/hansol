@@ -240,6 +240,9 @@
             top: 16px;
         }
         /* TOGETHER-STYLE */
+        .together{
+            margin-bottom:288px;
+        }
         .together h2{
             font-weight:900;
             font-size:200px;
@@ -295,7 +298,49 @@
             top:14px;
         }
         /* FOOTER-STYLE */
-
+        .footer{
+            padding:48px 0 30px;
+            background:#ddd;
+        }
+        .footer h2{
+            float:left;
+            margin-right:68px;
+        }
+        .footer h2 a{
+            display:block;
+            width:143px;
+            height:60px;
+            background:url(./images/logo2.jpg) no-repeat center;
+            background-size:contain;
+            text-indent:-99999px;
+        }
+        .footer address{
+            float:left;
+            font-size:14px;
+            color:var(--font-color02);
+            line-height:1.8;
+        }
+        .footer .f-right{
+            float:right;
+            position:relative;
+            top:-18px;
+        }
+        .footer .footer-nav a,.footer .footer-nav select{
+            display:inline-block;
+            padding:12px;
+            font-size:14px;            
+        }
+        .footer .footer-nav select{
+            width:210px;
+        }
+        .footer .sns{
+            text-align:right;
+        }
+        .footer .sns a{
+            display:inline-block;
+            width:35px;
+            margin-left:6px;
+        }
     </style>
 </head>
 <body>
@@ -466,8 +511,25 @@
             </div>
         </section>
         <footer class="footer">
-            <div class="container">
-                푸터
+            <div class="container clearfix">
+                <h2><a href="#">한솔제지</a></h2>
+                <address>서울 중구 을지로 100 (을지로2가) 파인애비뉴 B동 23~24층<br>Copyright 2020. Hansol Paper., Ltd. All rights reserved.</address>
+                <div class="f-right">
+                    <div class="footer-nav">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">익명신고센터</a>
+                        <select name="family" id="family">
+                           <option>Family Site</option> 
+                           <option value="https://hansol.com/">한솔그룹</option>
+                           <option value="https://www.hansolpns.com/">한솔PNS</option>
+                           <option value="https://www.hansolhomedeco.co.kr/">한솔홈데코</option>
+                        </select>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><img src="./images/ico-inst.png" alt="instagram"></a>
+                        <a href="#"><img src="./images/ico-face.png" alt="facebook"></a>
+                    </div>
+                </div>
             </div>
         </footer>
     </section>
