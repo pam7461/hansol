@@ -133,6 +133,7 @@
 
         /* MAIN-STYLE */
         .main-slider{
+            margin-bottom:144px;
             padding-top:150px;
             position:relative;
             z-index:1000;
@@ -180,7 +181,9 @@
         }
 
         /* SUB-STYLE */
-        
+        .sub-slider{
+            margin-bottom:144px;
+        }
         .sub-slider .container{
             width:1900px;
         }
@@ -237,9 +240,60 @@
             top: 16px;
         }
         /* TOGETHER-STYLE */
-
-
-
+        .together h2{
+            font-weight:900;
+            font-size:200px;
+            color:var(--font-color04);            
+        }
+        .together h3{
+            margin-bottom:96px;
+            padding-right:70px;
+            font-weight:700;
+            font-size:72px;
+            line-height:1.2;
+            text-align:right;                  
+        }
+        .together li{
+            margin-bottom:46px;
+            border-top:2px solid var(--font-color01);
+            padding:42px 0;
+        }
+        .together li h4{
+            float:left;
+            width:524px;
+            font-weight:700;
+            font-size:36px;
+        }
+        .together li p{
+            float:left;
+            width:550px;
+        }
+        .together li span{
+            float:right;  
+            padding-right:52px;          
+        }
+        .together li span a{
+            display:block;
+            width:40px;
+            height:40px;
+            border-radius:20px;
+            background:var(--font-color01);
+            text-indent:-99999px;
+            position:relative;
+        }
+        .together li span a::after{
+            content:'';
+            display:block;
+            box-sizing:border-box;
+            width:10px;
+            height:10px;
+            border-top:2px solid var(--font-color04);
+            border-right:2px solid var(--font-color04);
+            transform:rotate(45deg);
+            position:absolute;
+            left:14px;
+            top:14px;
+        }
         /* FOOTER-STYLE */
 
     </style>
